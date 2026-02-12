@@ -12,6 +12,10 @@ import { Mapdemo7 } from './Components/Mapdemo7'
 import { Mapdemo8 } from './Components/Mapdemo8'
 import { Mapdemo9 } from './Components/Mapdemo9'
 import { Mapdemo10 } from './Components/Mapdemo10'
+import { Formdemo1 } from './Components/Formdemo1'
+import { Formdemo2 } from './Components/Formdemo2'
+import { Formdemo3 } from './Components/Formdemo3'
+import { Formdemo4 } from './Components/Formdemo4'
 
 
 function App() {
@@ -38,6 +42,15 @@ function App() {
       <Mapdemo9 />
       <hr />
       <Mapdemo10 />
+      <hr />
+      <Formdemo1 />
+      <hr />
+      <Formdemo2 />
+      <hr />
+      <Formdemo3 />
+      <hr />
+      <Formdemo4 />
+     
     </>
   )
 }
