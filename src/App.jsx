@@ -2,6 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import './assets/Style.css'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Mapdemo1 } from './Components/Mapdemo1'
 import { Mapdemo2 } from './Components/Mapdemo2'
 import { Mapdemo3 } from './Components/Mapdemo3'
@@ -16,6 +18,10 @@ import { Formdemo1 } from './Components/Formdemo1'
 import { Formdemo2 } from './Components/Formdemo2'
 import { Formdemo3 } from './Components/Formdemo3'
 import { Formdemo4 } from './Components/Formdemo4'
+import { Team1 } from './Components/Team1'
+import Navbar from './Components/Navbar'
+import { Team2 } from './Components/Team2'
+
 
 
 function App() {
@@ -23,34 +29,32 @@ function App() {
 
   return (
     <>
-      <Mapdemo1 />
-      <hr />
-      <Mapdemo2 />
-      <hr />
-      <Mapdemo3 />
-      <hr />
-      <Mapdemo4 />
-      <hr />
-      <Mapdemo5 />
-      <hr />
-      <Mapdemo6 />
-      <hr />
-      <Mapdemo7 />
-      <hr />
-      <Mapdemo8 />
-      <hr />
-      <Mapdemo9 />
-      <hr />
-      <Mapdemo10 />
-      <hr />
-      <Formdemo1 />
-      <hr />
-      <Formdemo2 />
-      <hr />
-      <Formdemo3 />
-      <hr />
-      <Formdemo4 />
-     
+
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/mapdemo1" element={<Mapdemo1 />} />
+          <Route path="/mapdemo2" element={<Mapdemo2 />} />
+          <Route path="/mapdemo3" element={<Mapdemo3 />} />
+          <Route path="/mapdemo4" element={<Mapdemo4 />} />
+          <Route path="/mapdemo5" element={<Mapdemo5 />} />
+          <Route path="/mapdemo6" element={<Mapdemo6 />} />
+          <Route path="/mapdemo7" element={<Mapdemo7 />} />
+          <Route path="/mapdemo8" element={<Mapdemo8 />} />
+          <Route path="/mapdemo9" element={<Mapdemo9 />} />
+          <Route path="/mapdemo10" element={<Mapdemo10 />} />
+          <Route path="/Formdemo1" element={<Formdemo1 />} />
+          <Route path="/Formdemo2" element={<Formdemo2 />} />
+          <Route path="/Formdemo3" element={<Formdemo3 />} />
+          <Route path="/Formdemo4" element={<Formdemo4 />} />
+          <Route path="/Team1" element={<Team1 />} />
+           <Route path="/Team2" element={<Team2 />} />
+        </Routes>
+
+      </BrowserRouter>
+    
+
+
     </>
   )
 }

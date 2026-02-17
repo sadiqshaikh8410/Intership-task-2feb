@@ -1,0 +1,50 @@
+.navbar {
+  display: flex;
+justify-content: space-around;
+  background:bisque;
+  align-items: center;
+  height: 80PX;
+  border-radius: 20PX;
+
+}
+.list{
+    display: flex;
+    gap: 35px;
+    position: relative;
+    left: 150px;
+}
+.navh1{
+    position: relative;
+    right: 150px;
+}
+
+
+.navbar a, .navbar span {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 30px;
+  background: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  min-width: 120px;
+}
+
+.dropdown-menu a {
+  color: black;
+  padding: 5px 0;
+}
+.card{
+  height: 50%;
+  width: 50%;
+}
+
