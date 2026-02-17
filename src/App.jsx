@@ -19,8 +19,12 @@ import { Formdemo2 } from './Components/Formdemo2'
 import { Formdemo3 } from './Components/Formdemo3'
 import { Formdemo4 } from './Components/Formdemo4'
 import { Team1 } from './Components/Team1'
-import Navbar from './Components/Navbar'
 import { Team2 } from './Components/Team2'
+import { Team3 } from './Components/Team3'
+import { Team4 } from './Components/Team4'
+import Navbar from './Components/Navbar'
+import { Apidemo1 } from './Components/Api/Apidemo1'
+
 
 
 
@@ -29,10 +33,12 @@ function App() {
 
   return (
     <>
-
-      <BrowserRouter>
-        <Navbar />
+   
+     
+     <BrowserRouter >
+     <Navbar />
         <Routes>
+          <Route path="/" element={<Apidemo1 />} />
           <Route path="/mapdemo1" element={<Mapdemo1 />} />
           <Route path="/mapdemo2" element={<Mapdemo2 />} />
           <Route path="/mapdemo3" element={<Mapdemo3 />} />
@@ -48,11 +54,16 @@ function App() {
           <Route path="/Formdemo3" element={<Formdemo3 />} />
           <Route path="/Formdemo4" element={<Formdemo4 />} />
           <Route path="/Team1" element={<Team1 />} />
-           <Route path="/Team2" element={<Team2 />} />
+          <Route path="/Team2" element={<Team2 />} />
+          <Route path="/Team3" element={<Team3 />} />
+          <Route path="/Team4" element={<Team4 />} />
+          
         </Routes>
 
-      </BrowserRouter>
+        </BrowserRouter>
+
     
+
 
 
     </>

@@ -14,6 +14,7 @@ function Navbar() {
         
 <div className="list">
             <Link to="/">Home</Link>
+            
 
             {/* MapDemo Dropdown */}
             <div
@@ -68,8 +69,8 @@ function Navbar() {
                     <div className="dropdown-menu">
                         <Link to="/Team1">Team1</Link>
                         <Link to="/Team2">Team2</Link>
-                        <Link to="/"></Link>
-                        <Link to="/"></Link>
+                        <Link to="/Team3">Team3</Link>
+                        <Link to="/Team4">Team4</Link>
                     </div>
                 )}
             </div>
